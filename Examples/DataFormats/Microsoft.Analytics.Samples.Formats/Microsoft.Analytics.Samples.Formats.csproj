@@ -46,6 +46,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="FixedLength\FixedLengthExtractor.cs" />
+    <Compile Include="Json\JsonStreamExtractor.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Json\JsonExtractor.cs" />
     <Compile Include="Json\JsonFunctions.cs" />
