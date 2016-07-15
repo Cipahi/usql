@@ -29,6 +29,7 @@ To deploy, you have two options, leveraging the Visual Studio tools, or using th
 
 ![](md_media/save_assembly.png) 
 
+Alternatively, you can also use U-SQL Code to register your assembly. More information can be found on https://msdn.microsoft.com/en-us/library/azure/mt621364.aspx
 
 # Using in U-SQL
 To use in U-SQL, it's fairly straightforward
@@ -102,7 +103,7 @@ REFERENCE ASSEMBLY [Microsoft.Analytics.Samples.Formats];
  @myRecords =
     EXTRACT
         _id string,
-		Revision string, 	
+	Revision string 	
     FROM @"sampledata/json/{*}.json"
     USING new Microsoft.Analytics.Samples.Formats.Json.JsonExtractor();
 
